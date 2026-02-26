@@ -54,7 +54,7 @@ resource "azurerm_lb_rule" "web_lb_rule_app1" {
   backend_port = 80
   frontend_ip_configuration_name = azurerm_lb.web_lb.frontend_ip_configuration[0].name
   probe_id = azurerm_lb_probe.web_lb-probe.id
-
+  backend_address_pool_ids = [azurerm_lb_backend_address_pool.web_lb_backend_address_pool]
 }
   
 # Resource-6: Associate Network Interface(vm) and Standard Load Balancer
