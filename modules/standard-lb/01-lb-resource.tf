@@ -13,7 +13,7 @@ resource "azurerm_public_ip" "web_lbpublicip" {
   resource_group_name = var.resourcegroup_name
   location = var.location
   allocation_method = "Dynamic"
-  sku = "Standard"
+  sku = "Basic"
 }
 
 # Resource-2: Create Azure Standard Load balancer
