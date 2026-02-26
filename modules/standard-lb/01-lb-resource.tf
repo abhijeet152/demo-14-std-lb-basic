@@ -21,7 +21,7 @@ resource "azurerm_lb" "web_lb" {
   name = var.web_lb_name
   location = var.location
   resource_group_name = var.resourcegroup_name
-  sku = "Basic"
+  sku = "Standard"
   frontend_ip_configuration {
     name = "web-lb-publicip-1"
     public_ip_address_id = azurerm_public_ip.web_lbpublicip.id
