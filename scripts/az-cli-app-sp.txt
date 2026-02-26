@@ -35,7 +35,7 @@ echo "App ID: $APP_ID"
 # Instead of using variables inside json parameters, directly put the values here and run the command.
 
 myorg="abhijeet152"
-myrepo="demo-11-bastion-vm" 
+myrepo="demo-14-std-lb-basic" 
 mybranch="main"
 
 az ad app federated-credential create \
@@ -44,10 +44,10 @@ az ad app federated-credential create \
     "name": "github-actions-federated-cred",
     "issuer": "https://token.actions.githubusercontent.com",
     "organizationId": "abhijeet152",
-    "repository": "demo-11-bastion-vm",
+    "repository": "demo-14-std-lb-basic",
     "entityType": "Branch",
     "branch": "main",
-    "subject": "repo:abhijeet152/demo-11-bastion-vm:ref:refs/heads/main",
+    "subject": "repo:abhijeet152/demo-14-std-lb-basic:ref:refs/heads/main",
     "description": "Federated credential for GitHub Actions",
     "audiences": ["api://AzureADTokenExchange"],    
     "scenarios": ["GitHubActionsDeployAzureResources"]
