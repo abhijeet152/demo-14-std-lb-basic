@@ -1,0 +1,1 @@
+# create network security group and associate to linux vm network interface.

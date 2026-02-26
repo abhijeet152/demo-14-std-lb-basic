@@ -1,0 +1,13 @@
+/ssh-keys
+
+.terraform/
+
+*.tfstate
+
+*.tfstate.*
+
+crash.log
+
+.terraformrc 
+
+terraform.rc # Ignores CLI configuration files that might contain local paths or credentials
